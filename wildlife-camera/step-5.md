@@ -56,6 +56,23 @@ Create `views/layouts/main.hbs` containing the following:
 <head>
   <meta charset="utf-8">
   <title>Wildlife camera</title>
+
+  <style type="text/css">
+    body {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100px;
+    }
+
+    img:first-of-type {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
   {{{body}}} 
