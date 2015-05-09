@@ -79,3 +79,7 @@ var server = app.listen(3000, function () {
   console.log('Wildlife Camera listening at http://%s:%s', address, port);
 });
 ```
+
+This should show us a nice directory listing of all the images in the `/images` folder, but it's a bit dull! In the next step we will create a more complex application to automatically update a web page every time a new image arrives.
+
+[Continue to step 5](step-5.md)
