@@ -10,3 +10,4 @@ _If you are able to arrive on the day with a fully operational Pi that would be 
 * [Step 1 - Setting up the Pi Camera](wildlife-camera/step-1.md)
 * [Step 2 - Writing a script to take photos](wildlife-camera/step-2.md)
 * [Step 3 - motion detection with Python](wildlife-camera/step-3.md)
+* [Step 4 - serving the images using a simple web server](wildlife-camera/step-4.md)

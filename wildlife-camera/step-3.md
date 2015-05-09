@@ -27,6 +27,7 @@ from PIL import Image, ImageChops
 
 # Initialise some things
 camera = picamera.PiCamera()
+camera.brightness = 60
 
 # Start an infinite loop
 while 1 == 1:
@@ -47,7 +48,6 @@ while 1 == 1:
   image2 = Image.open(stream2)
 
   # Compare the two images. See http://effbot.org/imagingbook/imagechops.htm#tag-ImageChops.difference
-  # if ImageChops.difference(image1, image2) > 0.5
   diff = ImageChops.difference(image1, image2)
   h = diff.histogram()
   sq = (value*((idx%256)**2) for idx, value in enumerate(h))
@@ -65,3 +65,8 @@ while 1 == 1:
 
   sleep(0.3)
 ```
+
+This should sit there merrily filling up your disk with images every time movement is detected! You may need to tweak the rms threshold.
+
+In the next step we will make this accessible via a web browser.
+[Continue to step 4](step-4.md)
