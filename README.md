@@ -9,3 +9,4 @@ _If you are able to arrive on the day with a fully operational Pi that would be 
 * [Kit list](wildlife-camera/kit-list.md)
 * [Step 1 - Setting up the Pi Camera](wildlife-camera/step-1.md)
 * [Step 2 - Writing a script to take photos](wildlife-camera/step-2.md)
+* [Step 3 - motion detection with Python](wildlife-camera/step-3.md)
