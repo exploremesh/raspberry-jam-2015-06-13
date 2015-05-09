@@ -1,14 +1,6 @@
+Pi Media Centre
 
-Raspberry Pi
+So you want a media centre but you dont have thousands of pounds? The Pi could be the answer!
+Have a look at the link and work through the instructions, its just that easy!
 
-Power supply
-
-Micro SD card (You can by these pre-flashed with Raspbian NOOBS. Or you can flash your own.)
-
-Keyboard & Mouse (We will have some on the day but not enough for everyone so please bring your own if you can)
-
-Ethernet cable (WiFi adapters are available, but ethernet cables are cheap!)
-
-Optional
-
-Continue to Step 1
+<a href="http://www.pcpro.co.uk/media-centres/1000077/how-to-turn-a-raspberry-pi-into-an-xbmc-media-center-build-a-fully-functional" target=0>Instructions</a>
