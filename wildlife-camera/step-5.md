@@ -8,7 +8,7 @@ We need some new modules:
 
 ```
 npm install glob --save
-npm install 
+npm install express-handlebars --save
 ```
 
 And then we need to remove the default `app.use('/')` route and replace it with something a bit fancier 
@@ -18,20 +18,21 @@ var os = require('os');
 var express = require('express');
 var app = express();
 var glob = require('glob');
+var handlebars = require('express-handlebars');
+
+app.engine('hbs', handlebars({
+  extname: '.hbs',
+  defaultLayout: 'main'
+}));
+
+app.set('view engine', 'hbs');
 
 app.get('/', function (req, res) {
 
   glob('images/**/*.jpg', function (er, files) {
-
-    var html = '<html><head><title>Wildlife camera</title></head><body>';
-
-    files.forEach(function(fileName) {
-      html += '<img src="/' + fileName + '" />';
+    res.render('image-viewer', {
+      images: files
     });
-
-    html += '</body></html>';
-
-    res.send(html);
   });
 });
 
@@ -43,4 +44,31 @@ var server = app.listen(3000, function () {
 
   console.log('Wildlife Camera listening at http://%s:%s', address, port);
 });
+```
+
+We have added some basic html templating to the above example using handlebars. In order for this to work we need to create the template files themselves. These should be as follows:
+
+Create `views/layouts/main.hbs` containing the following:
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wildlife camera</title>
+</head>
+<body>
+  {{{body}}} 
+</body>
+</html>
+```
+
+And then create `views/image-viewer.hbs' containing the following:
+
+```
+<h1>Wildlife camera</h1>
+{{#each images}}
+  <img src="{{this}}" />
+{{/each}}
+
 ```
