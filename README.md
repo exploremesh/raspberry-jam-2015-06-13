@@ -1,6 +1,15 @@
 # MESH Raspberry Jam, June 13th 2015
 http://www.meetup.com/The-THINQTANQ-Events-Meetups-and-More-in-Plymouth/events/220385447/
 
+## Game console
+## Media centre
+* [Kit list](game-console/kit-list.md)
+* [Instructions](game-console/instructions.md)
+
+## Media centre
+* [Kit list](media-centre/kit-list.md)
+* [Instructions](media-centre/instructions.md)
+
 ## Wildlife camera
 
 _The wildlife camera project assumes that you have your Raspberry Pi up and running Raspbian (SD cards can be purchased with this pre installed) and plugged into a screen, keyboard and mouse_ 

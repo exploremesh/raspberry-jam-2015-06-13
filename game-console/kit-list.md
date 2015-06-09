@@ -8,8 +8,5 @@
 * Ethernet cable (WiFi adapters are available, but ethernet cables are cheap!)
 
 ## Optional
-* Case for the Pi. [This case](http://www.amazon.co.uk/NEW-Raspberry-Model-Case-OneNineDesign/dp/B00M8ZEHIQ/ref=sr_1_1?ie=UTF8&qid=1431168434&sr=8-1&keywords=raspberry+pi+case) conveniently has a mounting for the camera to protect it.
-* IR Illumination. The NoIR version of the camera works at nighttime provided it has a source of infrared illumination. You won't need this on the day but to use the camera at night you may wish to purchase one of these.
-* WiFi adapter
-
-[Continue to Step 1](step-1.md)
+* Game controller. These [USB SNES controllers](http://www.amazon.co.uk/Super-Nintendo-SNES-Controller-Gamepad/dp/B00DG9KGHO/ref=sr_1_1?ie=UTF8&qid=1433843557&sr=8-1&keywords=SNES+Retro+USB+Super+Nintendo+Controller) are suitable for this although Xbox 360 and PS3 controllers work well if you have them.
+  (We will have some controllers at the event but you may wish to purchase some for use at home)
