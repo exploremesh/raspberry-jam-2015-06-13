@@ -34,6 +34,8 @@ camera = picamera.PiCamera()
 camera.capture('image.jpg')
 ```
 
+Run your script by typing `./wildlife-cam.py`
+
 This will take a new still image via a Python script. The next step will be to add in some motion detection.
 
 [Continue to step 3](step-3.md)

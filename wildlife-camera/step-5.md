@@ -1,8 +1,8 @@
-# Step 5 - automatically refreshing the images in a web page
+# Step 5 - Creating an automatically refreshing webpage
 
-In the previous step we made a simple directory listing, but what we'd _really_ like to do is to have a nice fancy web page which automatically refreshes when a new image comes in! As well as showing us the previous images.
+In the previous step we made a simple directory listing, but what we'd _really_ like to do is to have a nice fancy web page which refreshes for us, allowing you to keep an eye on things! As well as showing us the previous images.
 
-To do this, we are going to output a simple html page which lists all the images. We will then set up a directory watching script which will alert our web page when a new image has been saved.
+To do this, we are going to output a custom html page which lists all the images. We will then tell it to reload every 5 seconds.
 
 We need some new modules:
 
@@ -76,6 +76,13 @@ Create `views/layouts/main.hbs` containing the following:
 </head>
 <body>
   {{{body}}} 
+  
+  <script>
+    // Reload the page every 5 seconds
+    setTimeout(function() {
+      location.reload();
+    }, 5000);
+  </script>
 </body>
 </html>
 ```
@@ -89,3 +96,5 @@ And then create `views/image-viewer.hbs' containing the following:
 {{/each}}
 
 ```
+
+[Continue to step 6](step-6.md)

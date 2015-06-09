@@ -21,6 +21,8 @@ _If you are able to arrive on the day with a fully operational Pi that would be 
 * [Step 2 - Writing a script to take photos](wildlife-camera/step-2.md)
 * [Step 3 - motion detection with Python](wildlife-camera/step-3.md)
 * [Step 4 - serving the images using a simple web server](wildlife-camera/step-4.md)
+* [Step 5 - Creating an automatically refreshing webpage](wildlife-camera/step-5.md)
+* [Step 6 - starting the camera script when the pi turns on](wildlife-camera/step-6.md)
 
 ## Other random ideas
 The above projects are just a few ideas - here are some other things you could do today. We won't know everything about all of them, but that's all part of the fun!

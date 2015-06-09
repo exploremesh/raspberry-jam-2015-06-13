@@ -67,6 +67,8 @@ while 1 == 1:
   sleep(0.3)
 ```
 
+Run your script by typing `./wildlife-cam.py`
+
 This should sit there merrily filling up your disk with images every time movement is detected! You may need to tweak the rms threshold.
 
 In the next step we will make this accessible via a web browser.

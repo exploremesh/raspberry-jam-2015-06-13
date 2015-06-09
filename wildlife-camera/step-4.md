@@ -13,9 +13,13 @@ sudo apt-get install node
 ```
 
 ## Setting up our node project
-To create a new node project, we need to run the following command:
+To create a new node project, we need to run the following commands:
 
-```npm init```
+```
+mkdir wildlife-camera-web-app
+cd wildlife-camera-web-app
+npm init
+```
 
 Just press Enter for each question - this information doesn't matter a lot for us at this point! This will create a package.json file.
 
@@ -80,6 +84,6 @@ var server = app.listen(3000, function () {
 });
 ```
 
-This should show us a nice directory listing of all the images in the `/images` folder, but it's a bit dull! In the next step we will create a more complex application to automatically update a web page every time a new image arrives.
+Restart the node application. This should show us a nice directory listing of all the images in the `/images` folder, but it's a bit dull! In the next step we will create a more complex application to automatically refresh a web page periodically.
 
 [Continue to step 5](step-5.md)
