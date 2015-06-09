@@ -14,6 +14,7 @@ sudo apt-get install tk8.5-dev tcl8.5-dev
 sudo pip install pillow
 ```
 
+And then type the following code into the Python editor:
 
 ```
 #!/usr/bin/python
