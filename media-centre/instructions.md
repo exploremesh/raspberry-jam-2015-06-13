@@ -1,4 +1,4 @@
-Pi Media Centre
+# Pi Media Centre
 
 So you want a media centre but you dont have thousands of pounds? The Pi could be the answer!
 Have a look at the link and work through the instructions, its just that easy!
