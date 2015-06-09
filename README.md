@@ -30,9 +30,10 @@ The above projects are just a few ideas - here are some other things you could d
   * [Basic Apache web server](https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md)
   * [Installing WordPress](https://www.raspberrypi.org/documentation/usage/wordpress/README.md)
   * Websites running on the Raspberry Pi can even be viewed from people outside your network - talk to Andy about "Port forwarding" on the day if this interests you!
-* Play Minecraft - Raspbian comes with a slimmed down version of Minecraft installed.
 * [Learn to program in Scratch](https://www.raspberrypi.org/documentation/usage/scratch/README.md) - This is used a lot in schools to teach kids to program.
+* Play Minecraft - Raspbian comes with a slimmed down version of Minecraft installed.
 * [Learn to program in Python](https://www.raspberrypi.org/documentation/usage/python/README.md) - Python is very popular with beginners on the Pi due to it's relatively friendly syntax and gentle initial learning curve. Make no mistake though - this is a professional and capable programming language and many people earn their living using it.
+* Program Minecraft in Python! [http://www.raspberrypi-spy.co.uk/2014/06/building-a-castle-in-minecraft-with-python/](http://www.raspberrypi-spy.co.uk/2014/06/building-a-castle-in-minecraft-with-python/)
 * [Make some music](https://www.raspberrypi.org/documentation/usage/sonic-pi/README.md) - Raspbian ships with a simple programming language for making music called "Sonic Pi". It's another good way to introduce basic programming principles whilst keeping things fun. (Headphones *on* please! ;-) )
 
 ...And much more. If you've got an idea but not sure how to achieve it, speak to us, or Google it. We don't know everything, but we will do our best to help.
