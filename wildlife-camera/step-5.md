@@ -99,6 +99,6 @@ And then create `views/image-viewer.hbs' containing the following:
 
 Restart node by pressing Ctrl-C in the terminal window and then typing `node index.js`.
 This should then show the images you have taken in the browser as a gallery.
-It will refresh every 5 seconds, but at the moment our motion detection camera script is not running. To see new images as they come in, both need to be running. Open a new terminal window and type `./wildlife-camera.py' to run the camera script.
+It will refresh every 5 seconds, but at the moment our motion detection camera script is not running. To see new images as they come in, both need to be running. Open a new terminal window and type `./wildlife-camera.py` to run the camera script.
 
 [Continue to step 6](step-6.md)
