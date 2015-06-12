@@ -9,10 +9,14 @@ The basis of our motion detection script will be as follows:
 
 First install some packages:
 ```
-sudo apt-get install python3-pip
 sudo apt-get install tk8.5-dev tcl8.5-dev
-sudo pip install pillow
+sudo apt-get install python-imaging-tk
 ```
+
+<!--
+sudo apt-get install python3-pip
+sudo pip install pillow
+-->
 
 And then type the following code into the Python editor:
 
@@ -66,6 +70,8 @@ while 1 == 1:
 
   sleep(0.3)
 ```
+
+Make a new folder next to your `wildlife-cam.py` script called "images". The images we take will be saved into here.
 
 Run your script by typing `./wildlife-cam.py`
 
