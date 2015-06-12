@@ -73,8 +73,8 @@ var express = require('express');
 var app = express();
 var serveIndex = require('serve-index');
 
-app.use('/', serveIndex('images', {'icons': true}));
-app.use(express.static('images'));
+app.use('/', serveIndex('../images', {'icons': true}));
+app.use(express.static('../images'));
 
 var server = app.listen(3000, function () {
   console.log('Wildlife Camera listening at http://%s:%s', ip.address(), server.address().port);
