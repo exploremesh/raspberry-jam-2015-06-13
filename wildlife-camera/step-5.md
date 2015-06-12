@@ -29,7 +29,7 @@ app.set('view engine', 'hbs');
 
 app.get('/', function (req, res) {
 
-  glob('images/**/*.jpg', function (er, files) {
+  glob('images/**/*.jpg', { sort: true}, function (er, files) {
     res.render('image-viewer', {
       images: files
     });

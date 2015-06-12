@@ -14,7 +14,7 @@ Rather than typing directly into the shell however, Press `Ctrl-N` to start a ne
 print("hello world")
 ```
 
-Open a terminal window, navigate to the folder where you saved the file (E.g. `cd ~/' to go home, or `cd ~/Desktop` to go to the desktop).
+Open a terminal window, navigate to the folder where you saved the file (E.g. `cd ~' to go home, or `cd ~/Desktop` to go to the desktop).
 Then type `chmod +x wildlife-cam.py` to make the script executable. Then type `./wildlife-cam.py` to run your script and you should see `hello world` printed to the terminal.
 
 To take photos with the camera, we need to install a python library as follows:
