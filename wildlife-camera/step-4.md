@@ -25,7 +25,10 @@ Just press Enter for each question - this information doesn't matter a lot for u
 
 Next we are going to install Express - a nice simple web application framework for Node. We could achieve this without Express but it will make things a whole lot easier for us. The following command will install Express to a folder inside `node_modules`.
 
-```npm install express --save```
+```
+npm install express --save
+npm install ip --save
+```
 
 Next, create an `index.js` file by typing `touch index.js` on the command line. Open this file in a text editor.
 
@@ -40,7 +43,7 @@ Save the file, and type `node index.js` at the command line. This should print `
 Our next step is to set up Express to serve a basic html page. This is done as follows:
 
 ```
-var os = require('os');
+var ip = require('ip');
 var express = require('express');
 var app = express();
 
@@ -49,10 +52,9 @@ app.get('/', function (req, res) {
 });
 
 var server = app.listen(3000, function () {
-  var address = os.networkInterfaces().eth0[0].address;
   var port = server.address().port;
 
-  console.log('Wildlife Camera listening at http://%s:%s', address, port);
+  console.log('Wildlife Camera listening at http://%s:%s', ip.address(), port);
 });
 ```
 
