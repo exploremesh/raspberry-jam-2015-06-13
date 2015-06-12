@@ -29,14 +29,17 @@ app.set('view engine', 'hbs');
 
 app.get('/', function (req, res) {
 
-  glob('images/**/*.jpg', { sort: true}, function (er, files) {
+  glob('../images/**/*.jpg', function (er, files) {
+    // Sort our files in reverse date order
+    files.reverse(); 
+
     res.render('image-viewer', {
       images: files
     });
   });
 });
 
-app.use('/images', express.static('images'));
+app.use('/images', express.static('../images'));
 
 var server = app.listen(3000, function () {
   console.log('Wildlife Camera listening at http://%s:%s', ip.address(), server.address().port);
@@ -93,5 +96,9 @@ And then create `views/image-viewer.hbs' containing the following:
 {{/each}}
 
 ```
+
+Restart node by pressing Ctrl-C in the terminal window and then typing `node index.js`.
+This should then show the images you have taken in the browser as a gallery.
+It will refresh every 5 seconds, but at the moment our motion detection camera script is not running. To see new images as they come in, both need to be running. Open a new terminal window and type `./wildlife-camera.py' to run the camera script.
 
 [Continue to step 6](step-6.md)
