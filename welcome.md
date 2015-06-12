@@ -14,7 +14,8 @@ The plan for the day is relatively freeform - but the goal is for you to leave h
 
 Guides for these can be found at:
 
-**https://github.com/exploremesh/raspberry-jam-2015-06-13**
+**https://goo.gl/TtEr4l**  
+_(https://github.com/exploremesh/raspberry-jam-2015-06-13)_  
 
 If none of these take your fancy there's a list of other ideas at the bottom of the guide. Or you can go entirely off piste and do your own thing - we will do our best to help where we can! 
 
