@@ -14,7 +14,7 @@ npm install express-handlebars --save
 And then we need to remove the default `app.use('/')` route and replace it with something a bit fancier 
 
 ```
-var os = require('os');
+var ip = require('ip');
 var express = require('express');
 var app = express();
 var glob = require('glob');
@@ -39,10 +39,7 @@ app.get('/', function (req, res) {
 app.use('/images', express.static('images'));
 
 var server = app.listen(3000, function () {
-  var address = os.networkInterfaces().eth0[0].address;
-  var port = server.address().port;
-
-  console.log('Wildlife Camera listening at http://%s:%s', address, port);
+  console.log('Wildlife Camera listening at http://%s:%s', ip.address(), server.address().port);
 });
 ```
 

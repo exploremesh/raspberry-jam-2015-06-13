@@ -52,9 +52,7 @@ app.get('/', function (req, res) {
 });
 
 var server = app.listen(3000, function () {
-  var port = server.address().port;
-
-  console.log('Wildlife Camera listening at http://%s:%s', ip.address(), port);
+  console.log('Wildlife Camera listening at http://%s:%s', ip.address(), server.address().port);
 });
 ```
 
@@ -70,7 +68,7 @@ npm install serve-index --save
 Next we will require this module, and change the default route, such that our final code looks like this:
 
 ```
-var os = require('os');
+var ip = require('ip');
 var express = require('express');
 var app = express();
 var serveIndex = require('serve-index');
@@ -79,10 +77,7 @@ app.use('/', serveIndex('images', {'icons': true}));
 app.use(express.static('images'));
 
 var server = app.listen(3000, function () {
-  var address = os.networkInterfaces().eth0[0].address;
-  var port = server.address().port;
-
-  console.log('Wildlife Camera listening at http://%s:%s', address, port);
+  console.log('Wildlife Camera listening at http://%s:%s', ip.address(), server.address().port);
 });
 ```
 
