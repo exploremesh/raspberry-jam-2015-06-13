@@ -12,9 +12,12 @@ sudo crontab -e
 
 Using your cursor keys scroll to the bottom and add the following lines (Assuming you saved your script in your home directory):
 ```
-@reboot python /home/pi/wildlife-cam.py &
-@reboot node /home/pi/wildlife-camera-web-app/index.js &
+@reboot cd /home/pi && python wildlife-cam.py > /home/pi/wildlife-cam.log 2>&1
+@reboot cd /home/pi/wildlife-camera-web-app && /usr/local/bin/node index.js > /home/pi/wildlife-cam-web-app.log 2>&1
 ```
-The ampersand at the end tells Linux to run the command in the background.
+
+The `2>&1` at the end is a bit of Linux magic to tell it to also log errors to the log file.
+
+Press Ctrl-O and [Enter] to save the file. Then Ctrl-X to exit. Restart your Pi by typing `sudo reboot` and you motion detecting script and web app should start automatically.
 
 Now you can install your wildlife camera in the back garden and watch the results! Unless you have made it some serious waterproofing (including for the power cable) it might be best to stick to dry days/nights.
